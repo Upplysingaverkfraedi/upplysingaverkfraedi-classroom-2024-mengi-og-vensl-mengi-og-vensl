@@ -10,8 +10,8 @@ $$ A \cap B = A \setminus (A \setminus B) $$
 #### svar
 Skilgreiningin á sniðmengi $$A \cap B $$ eru öll stök sem að eru bæði í mengi A og B.
 
-Mismengi A∖B eru öll þau stök sem að eru mengi A en ekki í mengi B
-Mismengið A∖(A∖B) eru því öll þau stök sem að eru  í A **án** þeirra staka sem að eru ekki í mengi B, þ.e. öll stök sem að eru bæði í mengi A og B.
+Mismengi $$(A \setminus B)$$ eru öll þau stök sem að eru mengi A en ekki í mengi B
+Mismengið $$A \setminus (A \setminus B)$$ eru því öll þau stök sem að eru  í A **án** þeirra staka sem að eru ekki í mengi B, þ.e. öll stök sem að eru bæði í mengi A og B.
 
 Því eru hægt að segja:
 
