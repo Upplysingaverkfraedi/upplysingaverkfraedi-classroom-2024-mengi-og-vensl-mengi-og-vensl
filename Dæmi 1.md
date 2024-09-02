@@ -23,12 +23,12 @@ $$ A \cup B = (A \setminus B) \cup B $$
 
 #### Svar
 
-Sammengið $$ A \cup B $$ er mengi allra staka sem að eru annaðhvort í mengi A eða B.
+Sammengið $$A \cup B$$ er mengi allra staka sem að eru annaðhvort í mengi A eða B.
 
 Sniðmengið $$(A \setminus B)$$ er mengi allra staka sem að eru í mengi A en ekki í mengi B.
 mengið $$(A \setminus B) \cup B $$ er því sammengi þeirra staka sem að eru í mengi A en ekki í mengi B ($$A \setminus B$$) og þeirra staka sem að eru í mengi B þ.e. öll stök sem að eru í A eða B
 
 Því er hægt að segja:
-$$ A \cup B = (A \setminus B) \cup B $$
+$$A \cup B = (A \setminus B) \cup B $$
 
 
