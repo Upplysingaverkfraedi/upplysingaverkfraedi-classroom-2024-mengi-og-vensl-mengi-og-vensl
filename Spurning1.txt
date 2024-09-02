@@ -1,0 +1,34 @@
+Látum A og B vera hlutmengi alsherjarmengisins U . 
+Notið skilgreiningar á mengjahugtökum og þekktar umritunarreglur til að sýna að:
+a. Sýnið að sniðmengi A ∩ B má skrifa sem:
+
+A ∩ B = A ∖ ( A ∖ B )
+
+b. Sýnið að sammengi (A \cup B) má skrifa með hjálp mismunamengja:
+
+A ∪ B = ( A ∖ B ) ∪ B
+
+Sýnið útreikningana og notið skilgreiningar á sammengi ( ∪ ) , 
+sniðmengi ( ∩ ) , og mismengi ( ∖ ) , og stærðfræðilega rökfærslu.
+
+Svar: 
+Byrja á að skilgreina: 
+Sammengi ( ∪ ) tveggja mengja A og B er mengi þeirra staka sem eru a.m.k. í öðru þeirra, táknað A∪B.
+Sniðmengi ( ∩ ) tveggja mengja A og B er mengi þeirra staka sem eru í báðum mengjunum, táknað A∩B.
+Mismengi ( \ ) tveggja mengja A og B er mengi þeirra staka sem eru í A en ekki í B, táknað A\B.
+
+a)
+A ∩ B: Þetta er A sam B og er það mengi sem hefur bara þau stök sem eru bæði í A og B 
+
+A ∖ ( A ∖ B ): Byrjum að leysa innri svigann: Búum til nýtt mengi C: C=(A\B). 
+C er þá sem er mengi þeirra staka sem eru í A en ekki í B. 
+Svo leysum við A\C: Það eru mengi þeirra staka sem eru í A en ekki í C. 
+Þá er búið að útiloka þau stök sem eru bara í A en ekki í B og þau stök sem eru bara í B en ekki í A. 
+Þ.a.l. erum við bara með þau stök sem eru bæði í A og B. 
+
+b) A ∪ B: Samengi A og B eru öll þau stök sem eru í A eða B. 
+Byrjum að leysa ( A ∖ B ): þetta er mengi þeirra staka sem eru í A en ekki í B.
+Leysum svo seinni hlutann ( A ∖ B ) ∪ B: Þetta er sam B sem eru öll stökin í B. 
+Í fyrra skrefinu erum við að útilöka þau stök sem eru bæði í A og B. 
+En í seinna skrefinu bætum við aftur við öllum stökunum sem eru í B. 
+Og þá erum við komin með öll þau stök sem eru í A eða B
