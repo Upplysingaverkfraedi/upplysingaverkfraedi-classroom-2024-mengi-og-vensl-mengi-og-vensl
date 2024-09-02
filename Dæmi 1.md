@@ -7,7 +7,7 @@ a. **Sýnið að sniðmengi $A \cap B$ má skrifa sem:**
 
 $$ A \cap B = A \setminus (A \setminus B) $$
 
-#### svar
+#### svar a
 Skilgreiningin á sniðmengi $$A \cap B $$ eru öll stök sem að eru bæði í mengi A og B.
 
 Mismengi $$(A \setminus B)$$ eru öll þau stök sem að eru mengi A en ekki í mengi B
@@ -21,7 +21,7 @@ b. **Sýnið að sammengi \(A \cup B\) má skrifa með hjálp mismunamengja:**
 
 $$ A \cup B = (A \setminus B) \cup B $$
 
-#### Svar
+#### Svar b
 
 Sammengið $$A \cup B$$ er mengi allra staka sem að eru annaðhvort í mengi A eða B.
 
