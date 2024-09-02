@@ -18,13 +18,13 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
 
 Þegar vensl eru andsamhverf, þá þýðir það að ef a tengist b og b tengist a, þá þarf a og b að vera sama gildið, a = b
 
- Höfum mengið \( A = \{ 1, 2, 3\} \) og vensli $$R = \{(1, 2), (2, 1), (3, 3)\}$$
+ Höfum mengið $$A = \{(1, 2, 3)\}$$ og vensli $$R = \{(1, 2), (2, 1), (3, 3)\}$$
 
  Tökum nú dæmi um mengi og vensl sem að falla undir bæði
 
  Höfum eftirfarandi mengi:
 
- \( A = \{ 1, 2, 3\} \)
+ $$A = \{(1, 2, 3)\}$$
 
  og eftirfarandi vensl:
 
@@ -38,4 +38,12 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
 
  ### B
 
+Vensl á mengi \( A \) er hlutmengi af vörpunum úr $$\(A \times A \)$$. Vensl getur tengt eitt gildi við annað eða sjálft sig
+Til dæmis \( A = \{1, 2, 3\} \) og venslið $$\( R = \{(1, 2), (1, 3)\} \)$$
+Hér tengist 1 bæði 2 og 3
 
+Fall er sérstakt vensl þar sem hvert gildi í frummenginu \( A \) tengist nákvæmlega einu gildi í myndmenginu \( B \)
+Til dæmis $$\( f: A \to B \) þar sem \( A = \{1, 2, 3\} \) og \( B = \{a, b\} \) og \( f = \{(1, a), (2, b), (3, a)\} \)$$
+Þannig að a getur ekki tengst tveimur mismunandi b í falli
+
+Sem sagt í stuttu máli, vensl getur tengt eitt gildi við mörg önnur eða jafnvel sjálft sig. Fall er sérstakt vensl þar sem að hvert gildi tengist nákvæmlega einu öðru gildi í myndmengi þess.
