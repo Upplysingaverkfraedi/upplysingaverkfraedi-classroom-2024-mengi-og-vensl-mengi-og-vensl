@@ -1,3 +1,4 @@
+Spurning 2:
 Látum P(A) vera veldismengið af menginu A. 
 Sýnið hvort að P(A) ⊆ P(P(A)) sé alltaf það sama og tómamengið.
  Rökstyðjið af hverju eða af hverju ekki. (20 stig)
