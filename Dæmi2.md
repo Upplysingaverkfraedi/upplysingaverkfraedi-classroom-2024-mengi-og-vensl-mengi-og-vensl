@@ -24,7 +24,7 @@ Hlutmengi $P(A)$ eru þá:
 
 $P(P(A))$ = {{∅},{1},{{∅},{1}}}
 
-Tómamengið er ekki það sama og mengið af tómamenginu og því er {∅,{1}} sem að er í $P(A)$ ekki það sama og {{∅},{1}} sem að er I $P(P(A))$
+Tómamengið er ekki það sama og mengið af tómamenginu og því er {∅,{1}} sem að er í $P(A)$ ekki það sama og {{∅},{1}} sem að er í $P(P(A))$
 
 $P(A)$ er ekki þá hlutmengi í $P(P(A))$ og því er ekki hægt að segja að $P(A) \subseteq P(P(A))$ sé alltaf satt.
 
