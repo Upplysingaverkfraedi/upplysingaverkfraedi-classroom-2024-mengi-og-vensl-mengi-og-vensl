@@ -12,7 +12,7 @@ Veldismengi $P(A)$ er mengi allra hlutmengra af gefnu mengi A.
 Segjum sem dæmi að A = {1}.
 Hlutmengi A eru þá:
 - ∅
-- {1} 
+- {1} $\n$
 $P(A)$ = {∅,{1}}
 hlutmengi $P(A)$ eru þá:
 - {∅}
