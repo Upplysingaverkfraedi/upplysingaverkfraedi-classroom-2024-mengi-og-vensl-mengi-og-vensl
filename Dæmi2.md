@@ -6,7 +6,7 @@ alltaf það sama og tómamengið. Rökstyðjið af hverju eða af hverju ekki.*
 Skýrið ítarlega með röksemdum hvort mengið $P(A)$ sé eða sé ekki hlutmengi af $P(P(A))$. Notið
 dæmi til að styðja röksemdir ykkar.
 
-#### Svar
+### Svar
 
 Veldismengi $P(A)$ er mengi allra hlutmengra af gefnu mengi A.
 Segjum sem dæmi að A = {1}.
