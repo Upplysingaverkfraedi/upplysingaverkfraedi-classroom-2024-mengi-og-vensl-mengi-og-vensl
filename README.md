@@ -1,58 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/eaw_5ILO)
-# Mengi og vensl
 
-## Leiðbeiningar
-
-- **Öll svör verða að vera rökstudd með skýrri röksemdafærslu.** Ekki verður veitt stig fyrir svör
-  án rökstuðnings.
-- **Tryggið skýrleika og skipulag í uppsetningu.** Þið megið nota verkfæri eins og iPad fyrir
-  útreikninga þar sem það á við. Hlaðið svo upp PDF útgáfu af lausninni ykkar.
-- Þetta er hópverkefni, sem fer fram hér. **Notið PR til að fara yfir lausnir hvers annars.**
-  Mikilvægt er að allir séu virkir þátttakendur.
-- **Óskýr uppsetning hefur áhrif á stigagjöf verkefnisins.**
-- Gangi ykkur vel!
-
-Verkefnið byggir á virku samstarfi í gegnum GitHub þar sem notkun á branches, commitum, og pull
-requestum er mikilvæg. Branches ættu að vera vel skipulagðar með skýrum og rökréttum nöfnum sem
-endurspegla þemu eða virkni sem unnið er að. Commit skilaboð skulu vera skýr og lýsa þeim
-breytingum sem gerðar eru, þar sem samhengi á milli breyttra skráa er augljóst. Mikilvægt er að
-README skjalið sé uppfært reglulega og innihaldi skýrar leiðbeiningar um uppsetningu, notkun, og
-breytingar á verkefninu.
-
-Samvinna í teyminu er lykilatriði þar sem allir liðsmenn taka virkan þátt í þróun verkefnisins. Það
-skal tryggja jafna dreifingu á commitum, branches, og pull requestum meðal liðsmanna. Ákvarðanir
-skulu teknar í sameiningu, með virku samráði í gegnum code reviews og viðbrögð við breytingum. Það
-er mikilvægt að hver og einn liðsmanna leggi sitt af mörkum í samræmi við sína styrkleika og að
-þátttaka sé jöfn og vel skipulögð. Þetta stuðlar að sterkri teymisvinnu þar sem allir taka ábyrgð á
-árangri verkefnisins.
-
-Heildarstigagjöf fyrir GitHub notkun og samvinnu/virkni byggir á því hversu vel verkefnið uppfyllir
-þessi skilyrði, með 5 stig fyrir GitHub notkun og 5 stig fyrir samvinnu og virkni í teyminu.
-
-## 1. Mengjafræði (20 stig)
-
-**Látum $A$ og $B$ vera hlutmengi alsherjarmengisins $U$. Notið skilgreiningar á
-mengjahugtökum og þekktar umritunarreglur til að sýna að:**
-
-a. **Sýnið að sniðmengi $A \cap B$ má skrifa sem:**
-
-$$ A \cap B = A \setminus (A \setminus B) $$
-
-   
-b. **Sýnið að sammengi \(A \cup B\) má skrifa með hjálp mismunamengja:**  
-
-$$ A \cup B = (A \setminus B) \cup B $$
-
-Sýnið útreikningana og notið skilgreiningar á sammengi $\(\cup\)$, sniðmengi $\(\cap\)$,
-og mismengi $\(\setminus\)$, og stærðfræðilega rökfærslu.
-
-## 2. Veldismengi (20 stig)
-
-**Látum $P(A)$ vera veldismengið af menginu $A$. Sýnið hvort að $P(A) \subseteq P(P(A))$ sé
-alltaf það sama og tómamengið. Rökstyðjið af hverju eða af hverju ekki.** (20 stig)
-
-Skýrið ítarlega með röksemdum hvort mengið $P(A)$ sé eða sé ekki hlutmengi af $P(P(A))$. Notið
-dæmi til að styðja röksemdir ykkar.
 
 ## 3. Vensl (25 stig)
 
@@ -60,64 +6,68 @@ dæmi til að styðja röksemdir ykkar.
 
 a. **Dæmi um vensl á mengi sem eru bæði samhverf og andsamhverf.** (10 stig)
 
+Byrjum á því að skoða muninn á samhverfu og andsamhverfu.
+
+Vensl R á menginu A er samhverft ef að (b,a) ∈ R þegar (a,b) ∈ R, fyrir öll a,b ∈ A. Eða þegar a er tengt við b með
+venslinu þá er b líka tengt við a. Samhverfa leyfir tenginu á báða vegu milli staka.
+
+
+Vensl R á menginu A er andsamhhverft ef að fyrir öll a,b ∈ A, ef (a,b) ∈ R og (b,a) ∈ R þá gildir a=b. Með öðrum orðum ,
+ef a er tengt við b og b tengt við a þá þurfa a og b að vera sama stakið til að það sé andsamhverft. Tvö ólík stök geta
+ekki tengst á báða vegu. Andsamhverfan leyfir ekki að stök tengist á báða vegu nema þau séu jöfn.
+
+
+-Dæmi um vensl á mengi sem eru bæði samhverf og andsamhverf.
+
+Jöfnuðarvensl [equivalence relation], eru dæmi um vensl sem hafa þann eiginleika að vera bæði samhverf og andsamhverf.
+Eru þau skilgreint sem R = {(a,b) : a ∈ A }.
+Ef við höfum mengi A = {1,2,3} þá er venslið R = { (1,1), (2,2), (3,3)} bæði samhverft og andsamhverft. Því hér gildir
+að fyrir hvert (a,a) ∈ R er (a,a) einng í R og hér er a = b.
+
 b. **Munur á milli falla og vensla.** (5 stig)
 
 Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. Skýrið einnig muninn á
 falli og vensli og gefið gott sýnidæmi um muninn.
 
-## 4. Vensl á heiltölum (25 stig)
 
-**Búið til vensl á mengi heiltalnanna $A = \{1, 2, 3, 4\}$ með fylki í `Python` eða `R` samkvæmt
-eftirfarandi leiðbeiningum:**
+Vens og föll eru bæði hugtök sem lýsa sambandi milli staka í tveimur mengjum. Þó er munur á milli eiginleika þeirra.
 
-1. Notið afmælisdagana ykkar til að setja slembifræ (e. random seed).
-2. Búið til $4 \times 4$ fylki með slembibreyttum gildum sem eru 0 eða 1.
-3. Forritið virkni sem skoðar eiginleika venslanna: athugið hvort þau
-   séu sjálfhverf, samhverf, andsamhverf, og gegnvirk.
-4. Sannreynið niðurstöður forritsins með því að skoða venslin myndrænt með örvaneti.
+Vensl getur haft mörg úttök fyrir eitt inntak eða getur haft mörg stök í B samsvarandi einu staki í A.
 
-Athugið, þið þurfið að uppfæra `README` skjalið til að útskýra hvernig eigi að keyra kóðann ykkar
-(og hvaða pakka þarf að setja upp, ef við á). Þar sem þið eruð að endurtaka þetta fyrir allar
-afmælisdaga hópmeðlima þá er ráðlagt að setja upp fall sem tekur inn dagsetninguna og skilar
-niðurstöðum.
+ Meðan að fall hefur eitt inntak sem skilar einu úttaki. Fall er sérstakt dæmi af vensli milli mengja A og B þar sem
+ hverju staki a í mengi A er úthlutað nákvæmlega ein staki í b í mengi B. Ekkert stak í A má því hafa fleiri en eitt
+ samsvarandi stak í menginu B.
 
-### Python Kóði
+Fall er því í raun tegund vensla, með ákveðnum eiginleikum sem voru nefndir hér að ofan. Fall hefur því þrengri skilyrði
+en vensl, stak í fyrra mengi má aðeins tengjast einu staki í örðu mengi. Ólíkt venslum sem hafa ekki þessi skilyrði eitt
+ stak í fyrra mengi má t.d. tengjast engu staki  í síðara mengi í að tengjast mörgum stökum.
 
-```python
-# Búa til slembifræ/seed út frá dagsetningunni
-seed = int(f"{dd:02d}{mm:02d}{yyyy}")
-np.random.seed(seed)
 
-# Búa til 4x4 slembifylki með 0 eða 1
-fylki = np.random.randint(0, 2, size=(4, 4))
+Dæmi um vensl er:
 
-# Endirskrifa dagssetninguna á formið "dd-mm-yyyy"
-formatted_date = f"{dd:02d}-{mm:02d}-{yyyy}"
+Mengin
+- A = {1,2,3,4,5}
+- B = {a,b,c,d,e}
 
-# Prenta niðurstöður:
-print(f"Fylkið fyrir dagsetninguna {formatted_date} og seed {seed}:")
-print(fylki)
-print()
-```
+Vensl R
 
-### R Kóði
+- R = {(1,a)(2,b)(3,c)(4,d)(5,e)(2,e)(4,e)}
 
-```r
-# Setja slembifræ með dagsetningu
-dd <- 17
-mm <- 6
-yyyy <- 1944
-seed <- as.numeric(paste0(dd, sprintf("%02d", mm), yyyy))
-set.seed(seed)
+Hér sjáum við venslið R sem tengit stök úr A og B. Það getur verið fleiri en eitt par fyrir hvert stak í A. Eins og hér
+ sést að t.d. 4 í A tengist bæði d og e í B. Einng tengist 2 í A bæði b og e í B.
 
-# Búa til fylki
-fylki <- matrix(round(runif(4 * 4, 0, 1)), nrow = 4)
 
-# Endurskrifa dagsetningu
-formatted_date <- sprintf("%02d-%02d-%04d", dd, mm, yyyy)
+Dæmi um fall er:
 
-# Prenta niðurstöður
-cat("Fylkið fyrir dagsetninguna", formatted_date, "og seed", seed, ":\n")
-print(fylki)
-cat("\n")
-```
+Mengin
+- A = {1,2,3,4,5}
+- B = {a,b,c,d,e}
+
+Fall f
+
+f =  {(1,a)(2,b)(3,c)(4,d)(5,e)}
+
+Hér sést að fyrir fallið tengist stak í A aðeins einu staki í B. T.d. fyrir eitt í A er aðeins til eitt par eða (1,a) og
+ ekki til neitt annað stak í B sem tengist 1 í a.
+
+
