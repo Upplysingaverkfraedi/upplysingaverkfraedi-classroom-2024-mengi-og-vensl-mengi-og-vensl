@@ -18,7 +18,7 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
 
 Þegar vensl eru andsamhverf, þá þýðir það að ef a tengist b og b tengist a, þá þarf a og b að vera sama gildið, a = b
 
- Höfum mengið:
+ Til dæmis er mengið:
  
  $$A = \{(1, 2, 3)\}$$ 
  
@@ -26,7 +26,9 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
  
  $$R = \{(1, 2), (2, 1), (3, 3)\}$$
 
- Tökum nú dæmi um mengi og vensl sem að falla undir bæði
+ ekki andsamhverft þar sem 1 bendir á 2 og öfugt, en það er ekki sama gildi. 
+ 
+ Tökum nú dæmi um mengi og vensl sem að eru bæði samhverf og andsamhverf
 
  Höfum eftirfarandi mengi:
 
@@ -38,7 +40,7 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
 
  Þetta er samhverft þar sem hvert par er hefur sama gildi og því er ekki hægt að finna mismunandi a og b sem tengjast í báðar áttir
 
-Þetta er andsamhverft þar sem að það er ekkert tilvik þar sem a er ekki sama gildi og b
+ Þetta er andsamhverft þar sem að það er ekkert tilvik þar sem a er ekki sama gildi og b
 
  Því er venslið bæði samhverft og andsamhverft
 
@@ -46,11 +48,11 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
 
 Vensl á mengi A er hlutmengi af vörpunum úr AxA. Vensl getur tengt eitt gildi við annað eða sjálft sig
 Til dæmis A = \{1, 2, 3\} og venslið R = {(1, 2), (1, 3)}
-Hér tengist 1 bæði 2 og 3
+Hér tengist 1 bæði 2 og 3, getur sem sagt tengst nokkrum gildum
 
 Fall er sérstakt vensl þar sem hvert gildi í frummenginu A tengist nákvæmlega einu gildi í myndmenginu B
 Til dæmis $$\ f: A \to B$$ þar sem A = {1, 2, 3} og B = {a, b} og f = {(1, a), (2, b), (3, a)}
 
-Þannig að a getur ekki tengst tveimur mismunandi b í falli
+Þannig að sérhvert stak í mengi A, getur aðeins tengst einu staki úr myndmengi B.
 
-Sem sagt í stuttu máli, vensl getur tengt eitt gildi við mörg önnur eða jafnvel sjálft sig. Fall er sérstakt vensl þar sem að hvert gildi tengist nákvæmlega einu öðru gildi í myndmengi þess.
+Sem sagt í stuttu máli, vensl er almennt hugtak sem lýsir samböndum milli staka, þau geta tengst við eitt gildi, mörg önnur eða jafnvel sjálft sig. Fall er sérstakt vensl þar sem að hvert gildi tengist nákvæmlega einu öðru gildi í myndmengi þess.
