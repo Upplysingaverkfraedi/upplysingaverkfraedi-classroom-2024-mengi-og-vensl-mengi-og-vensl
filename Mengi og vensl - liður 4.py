@@ -3,7 +3,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 def athuga_vensli_og_teikna(dd, mm, yyyy):
-    # Búa til slembifræ/seed út frá dagsetningunni
+    # Búa til slembifræ út frá dagsetningu
     seed = int(f"{dd:02}{mm:02}{yyyy}")
     np.random.seed(seed)
 
@@ -17,6 +17,12 @@ def athuga_vensli_og_teikna(dd, mm, yyyy):
     print(f"Fylkið fyrir dagsetninguna {formatted_date} og seed {seed}:")
     print(fylki)
     print()
+
+
+    # Sjálfhverf: Sérhvert stak er venslað af sjálfu sér (a ~ a)
+    # Samhverf:  Fyrir öll stök a og b í S gildir (a ~ b <=> b ~ a)
+    # Andsamhverf: Andstæða við samhverft, má aðeins ganga í eina átt (ekki báðar áttir)
+    # Gegnvirk: Fyrir öll a, b og c í X að ef a er venslað við b er venslað við c, þá er a og c tengt. (a=b og b=c --> a=c)
 
     # Athugar hvort fylkið sé sjálfhverft
     def er_sjalfhverft(fylki):
@@ -57,27 +63,15 @@ def athuga_vensli_og_teikna(dd, mm, yyyy):
     plt.title(f"Örvanet fyrir dagsetninguna {dd:02d}-{mm:02d}-{yyyy}")
     plt.show()
 
-# Dagsetningar sem verða skoðaðar
+# Afmælisdagar hópmeðlima
 dagsetningar = [
-    (15, 10, 2002),  # 15. október 2002
-    (27, 5, 2001),   # 27. maí 2001
-    (14, 7, 2003)    # 14. júlí 2001
+    (15, 10, 2002),  # 15. október 2002 (Alda)
+    (27, 5, 2001),   # 27. maí 2001 (Elísabet)
+    (14, 7, 2003)    # 14. júlí 2003 (Benni)
 ]
 
-# Keyra fyrir hverja dagsetningu og teikna örvanet
+# Keyra fyrir alla afmælisdagsetningar og teikna örvanet
 for dd, mm, yyyy in dagsetningar:
     athuga_vensli_og_teikna(dd, mm, yyyy)
-
-
-
-# Sjálfhverf: Sérhvert stak er venslað sjálfu sér (a ~ a) "(a, a) ∈ R for every element a ∈ A."
-# Samhverf:  Fyrir öll stök a og b í S gildir (a ~ b <=> b ~ a)
-# Andsamhverf: Má aðeins ganga í eina átt (ekki báðar áttir)
-# Gegnvirk: Fyrir öll a, b og c í X að ef a er venslað við b er venslað við c, þá er a og c tengt. (a=b og b=c --> a=c)
-
-#Dagsetningar: 
-   # (15, 10, 2002),  # Dagsetning 1 Alda 
-    # (14, 7, 2003),  # Dagsetning 2 Benni 
-    # (27, 5, 2001)     # Dagsetning 3 Elísabet
 
     
