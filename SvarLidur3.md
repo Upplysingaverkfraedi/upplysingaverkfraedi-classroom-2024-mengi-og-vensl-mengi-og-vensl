@@ -38,7 +38,7 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
 
  $$R = \{(1, 1), (2, 2), (3, 3)\}$$
 
- Þetta er samhverft þar sem hvert par er hefur sama gildi og því er ekki hægt að finna mismunandi a og b sem tengjast í báðar áttir
+ Þetta er samhverft þar sem að fyrir hvert par í venslinu gildir að a = b, svo að fyrir hvert par er "andhverfa parið" alltaf til, svo það brýtur ekki reglu um samhverf pör
 
  Þetta er andsamhverft þar sem að það er ekkert tilvik þar sem a er ekki sama gildi og b
 
@@ -47,7 +47,7 @@ Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. S
  ### B
 
 Vensl á mengi A er hlutmengi af vörpunum úr AxA. Vensl getur tengt eitt gildi við annað eða sjálft sig
-Til dæmis A = \{1, 2, 3\} og venslið R = {(1, 2), (1, 3)}
+Til dæmis A = \{1, 2, 3\} og venslið R = {(1, 2), (1, 3)}. 
 Hér tengist 1 bæði 2 og 3, getur sem sagt tengst nokkrum gildum
 
 Fall er sérstakt vensl þar sem hvert gildi í frummenginu A tengist nákvæmlega einu gildi í myndmenginu B
