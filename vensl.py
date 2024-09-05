@@ -33,7 +33,7 @@ def slembiseed (dd, mm, yyyy):
     print(f"Andsamhverf: {andsamhverft}")
     print(f"Gegnvirk: {gegnvirk}")
 
-    # Teikna örvanet
+    # Teikna örvanet, skilar örvaneti fyrir hvert fylki fyrir sig, þannig á að skila 3 fylkjum.
     G = nx.DiGraph()
     for i in range(4):
         for j in range(4):
