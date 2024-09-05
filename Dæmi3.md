@@ -1,5 +1,3 @@
-
-
 ## 3. Vensl (25 stig)
 
 **Sýnið og skýrið eftirfarandi:**
@@ -69,5 +67,3 @@ f =  {(1,a)(2,b)(3,c)(4,d)(5,e)}
 
 Hér sést að fyrir fallið tengist stak í A aðeins einu staki í B. T.d. fyrir eitt í A er aðeins til eitt par eða (1,a) og
  ekki til neitt annað stak í B sem tengist 1 í a.
-
-
