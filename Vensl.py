@@ -43,21 +43,25 @@ for i in range(len(birthdays)):
     print(fylki)
     print()
 
+# sjálfhverft ef stökin á aðalhornalínunni er 1 (i=j)
     if np.all(np.diag(fylki) == 1):
         print("Fylkið er sjálfhverft")
     else:
         print("Fylkið er ekki sjálfhverft")
 
+#samhverft ef fylkið er jafnt og fylkið transposed
     if np.array_equal(fylki, fylki.T):
         print("Fylkið er samhverft")
     else:
         print("Fylkið er ekki samhverft")
+
 
     if np.array_equal(fylki, -fylki):
         print("Fylkið er andsamhverft")
     else:
         print("Fylkið er ekki andsamhverft")
 
+#Athugar hvort fylkið^2 sé minni eða jafnt og A 
     if np.all(np.dot(fylki, fylki) <= fylki):
         print("Fylkið er gegnvirkt")
     else:
