@@ -114,3 +114,38 @@ Fall krefst þess að hvert stak í upphaflegu mengi (dómenginu) sé tengt við
 Vensl eru almennt ekki bundin við þessa úthlutun og geta haft fleiri tengsl, þar sem það er ekki bundið að hverju staki í mengi.
 Vensl eru oft notuð til að lýsa tengslum sem falla ekki undir ákveðið lögmál eins og í tilfelli falla.
 
+4. Vensl á heiltölum 
+Hérna eru niðurstöðurnar úr Vensl.py
+Fylkið fyrir dagsetninguna 09-092003 og seed 9092003:
+[[0 0 1 1]
+ [0 0 1 0]
+ [1 0 0 0]
+ [1 1 0 0]]
+
+Fylkið er ekki sjálfhverft
+Fylkið er ekki samhverft
+Fylkið er ekki andsamhverft
+Fylkið er ekki gegnvirkt
+
+Fylkið fyrir dagsetninguna 27-112002 og seed 27112002:
+[[0 0 1 0]
+ [1 1 1 0]
+ [0 1 0 1]
+ [1 0 1 0]]
+
+Fylkið er ekki sjálfhverft
+Fylkið er ekki samhverft
+Fylkið er ekki andsamhverft
+Fylkið er ekki gegnvirkt
+
+Fylkið fyrir dagsetninguna 30-012001 og seed 30012001:
+[[0 0 1 0]
+ [1 0 0 1]
+ [0 0 0 0]
+ [0 1 0 1]]
+
+Fylkið er ekki sjálfhverft
+Fylkið er ekki samhverft
+Fylkið er ekki andsamhverft
+Fylkið er ekki gegnvirkt
+
