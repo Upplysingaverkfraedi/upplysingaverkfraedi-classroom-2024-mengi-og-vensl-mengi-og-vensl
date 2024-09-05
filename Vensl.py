@@ -43,30 +43,40 @@ for i in range(len(birthdays)):
     print(fylki)
     print()
 
-# sjálfhverft ef stökin á aðalhornalínunni er 1 (i=j)
+    # sjálfhverft ef stökin á aðalhornalínunni eru 1 (i=j)
     if np.all(np.diag(fylki) == 1):
         print("Fylkið er sjálfhverft")
     else:
         print("Fylkið er ekki sjálfhverft")
 
-#samhverft ef fylkið er jafnt og fylkið transposed
+    # Samhverft ef fylkið er jafnt og fylkið transposed
     if np.array_equal(fylki, fylki.T):
         print("Fylkið er samhverft")
     else:
         print("Fylkið er ekki samhverft")
 
-
+    # Andsamhverft ef fylkið er jafnt -fylkinu
     if np.array_equal(fylki, -fylki):
         print("Fylkið er andsamhverft")
     else:
         print("Fylkið er ekki andsamhverft")
 
-#Athugar hvort fylkið^2 sé minni eða jafnt og A 
-    if np.all(np.dot(fylki, fylki) <= fylki):
+    # Athuga gegnvirkni
+    n = fylki.shape[0]  # Fjöldi raða/dálka í fylkinu
+    er_gegnvirkt = True
+
+    # Athuga gegnvirkni
+    for i in range(n):
+        for j in range(n):
+            if fylki[i][j] == 1:
+                for k in range(n):
+                    if fylki[j][k] == 1 and fylki[i][k] != 1:
+                        er_gegnvirkt = False
+                        break
+    if er_gegnvirkt:
         print("Fylkið er gegnvirkt")
     else:
         print("Fylkið er ekki gegnvirkt")
-    print()
 
     # Teikna örvanet fyrir fylkin
     plot_relation(fylki, f"Relation Graph for {formatted_date}")
