@@ -31,93 +31,137 @@ Heildarstigagjöf fyrir GitHub notkun og samvinnu/virkni byggir á því hversu 
 
 ## 1. Mengjafræði (20 stig)
 
-**Látum $A$ og $B$ vera hlutmengi alsherjarmengisins $U$. Notið skilgreiningar á
-mengjahugtökum og þekktar umritunarreglur til að sýna að:**
-
-a. **Sýnið að sniðmengi $A \cap B$ má skrifa sem:**
-
-$$ A \cap B = A \setminus (A \setminus B) $$
-
-   
-b. **Sýnið að sammengi \(A \cup B\) má skrifa með hjálp mismunamengja:**  
-
-$$ A \cup B = (A \setminus B) \cup B $$
-
-Sýnið útreikningana og notið skilgreiningar á sammengi $\(\cup\)$, sniðmengi $\(\cap\)$,
-og mismengi $\(\setminus\)$, og stærðfræðilega rökfærslu.
+við gerðum lausn á lið 1 þar sem ég nýti mér umritunarreglur í mengjafræði til að leiða út tvær sannanir.
+Lausnin er útfærð í markdown skjali (.md) með md.stærðfræðitáknum.
 
 ## 2. Veldismengi (20 stig)
 
-**Látum $P(A)$ vera veldismengið af menginu $A$. Sýnið hvort að $P(A) \subseteq P(P(A))$ sé
-alltaf það sama og tómamengið. Rökstyðjið af hverju eða af hverju ekki.** (20 stig)
+Fylgdu þessum skrefum til að setja upp og keyra kóðann á réttan hátt.
 
-Skýrið ítarlega með röksemdum hvort mengið $P(A)$ sé eða sé ekki hlutmengi af $P(P(A))$. Notið
-dæmi til að styðja röksemdir ykkar.
+1. **Búa til nýtt Virtual Environment**:
+   - Opnaðu forritunarumhverfið
+   - Keyrðu eftirfarandi skipun til að búa til nýtt virtual environment:
+     ```bash
+     python -m venv venv
+     ```
+   - Þetta býr til nýtt environment í möppu sem kallast `venv`.
+
+2. **Virkið Virtual Environment**:
+   - Til að virkja environmentið, keyrðu eftirfarandi skipun:
+     - **Windows**:
+       ```bash
+       venv\Scripts\activate
+       ```
+     - **macOS/Linux**:
+       ```bash
+       source venv/bin/activate
+       ```
+   - Þegar environmentið er virkt ættir þú að sjá nafnið `venv` fyrir framan skipanalínuna í terminalnum.
+
+## Skref 2: Setja upp nauðsynlega pakka
+- Þó að engir sérstakir pakkar séu nauðsynlegir fyrir þennan kóða, þá skaltu alltaf ganga úr skugga um að allar dependency séu uppfærðar með:
+  ```bash
+  pip install --upgrade pip
+  ```
+
+## Skref 3: Keyra kóðann
+1. **Veldu rétt Interpreter**:
+   - Opnaðu Command Palette með `Ctrl+Shift+P` (eða `Cmd+Shift+P` á macOS).
+   - Sláðu inn `Python: Select Interpreter` og veldu environmentið sem heitir `venv`.
+
+2. **Keyra kóðann**:
+   - Keyrðu skrána með því að nota:
+     ```bash
+     python power_set_solution.py
+     ```
+   - Úttakið mun birtast í terminalnum neðst í VS Code.
 
 ## 3. Vensl (25 stig)
 
-**Sýnið og skýrið eftirfarandi:**
+Við útfærðum svar við lið 3 í mengi og vensl verkefninu með markdown file.
 
-a. **Dæmi um vensl á mengi sem eru bæði samhverf og andsamhverf.** (10 stig)
-
-b. **Munur á milli falla og vensla.** (5 stig)
-
-Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi. Skýrið einnig muninn á
-falli og vensli og gefið gott sýnidæmi um muninn.
 
 ## 4. Vensl á heiltölum (25 stig)
 
-**Búið til vensl á mengi heiltalnanna $A = \{1, 2, 3, 4\}$ með fylki í `Python` eða `R` samkvæmt
-eftirfarandi leiðbeiningum:**
+# Venslamatris Framleiðandi
 
-1. Notið afmælisdagana ykkar til að setja slembifræ (e. random seed).
-2. Búið til $4 \times 4$ fylki með slembibreyttum gildum sem eru 0 eða 1.
-3. Forritið virkni sem skoðar eiginleika venslanna: athugið hvort þau
-   séu sjálfhverf, samhverf, andsamhverf, og gegnvirk.
-4. Sannreynið niðurstöður forritsins með því að skoða venslin myndrænt með örvaneti.
+Þetta Python forrit býr til venslamatris fyrir tiltekna dagsetningu og athugar eiginleika þess (sjálfhverft, 
+samhverft, andsamhverft, og gegnvirkt). Það sýnir einnig venslin myndrænt með `matplotlib`.
 
-Athugið, þið þurfið að uppfæra `README` skjalið til að útskýra hvernig eigi að keyra kóðann ykkar
-(og hvaða pakka þarf að setja upp, ef við á). Þar sem þið eruð að endurtaka þetta fyrir allar
-afmælisdaga hópmeðlima þá er ráðlagt að setja upp fall sem tekur inn dagsetninguna og skilar
-niðurstöðum.
+## Forkröfur
 
-### Python Kóði
+Gakktu úr skugga um að þú hafir eftirfarandi uppsett:
 
-```python
-# Búa til slembifræ/seed út frá dagsetningunni
-seed = int(f"{dd:02d}{mm:02d}{yyyy}")
-np.random.seed(seed)
+- Python 3.x
+- `numpy`
+- `matplotlib`
 
-# Búa til 4x4 slembifylki með 0 eða 1
-fylki = np.random.randint(0, 2, size=(4, 4))
+## Leiðbeiningar til að keyra kóðann í nýju Python umhverfi
 
-# Endirskrifa dagssetninguna á formið "dd-mm-yyyy"
-formatted_date = f"{dd:02d}-{mm:02d}-{yyyy}"
+### 1. Setja upp Python umhverfi
 
-# Prenta niðurstöður:
-print(f"Fylkið fyrir dagsetninguna {formatted_date} og seed {seed}:")
-print(fylki)
-print()
-```
+Þú getur sett upp nýtt Python umhverfi með verkfærum eins og `virtualenv` eða `conda`. Hér eru skrefin fyrir bæði:
 
-### R Kóði
+#### Notkun `virtualenv` (mælt með):
 
-```r
-# Setja slembifræ með dagsetningu
-dd <- 17
-mm <- 6
-yyyy <- 1944
-seed <- as.numeric(paste0(dd, sprintf("%02d", mm), yyyy))
-set.seed(seed)
+1. Settu upp `virtualenv` ef þú hefur ekki gert það áður:
+   ```bash
 
-# Búa til fylki
-fylki <- matrix(round(runif(4 * 4, 0, 1)), nrow = 4)
+   pip install virtualenv
+	2	Búðu til nýtt sýndarumhverfi: bash
+	3	 virtualenv venv
+	4	  
+	5	Virkjaðu umhverfið:
+	◦	Á macOS/Linux: bash  source venv/bin/activate
+	◦	  
+	◦	Á Windows: bash
+	◦	 .\venv\Scripts\activate
+	◦	  
+Notkun conda:
+	1	Búðu til nýtt umhverfi: bash  conda create --name relation-matrix-env python=3.x
+	2	  
+	3	Virkjaðu umhverfið: bash  conda activate relation-matrix-env
+	4	  
 
-# Endurskrifa dagsetningu
-formatted_date <- sprintf("%02d-%02d-%04d", dd, mm, yyyy)
 
-# Prenta niðurstöður
-cat("Fylkið fyrir dagsetninguna", formatted_date, "og seed", seed, ":\n")
-print(fylki)
-cat("\n")
-```
+2. Setja upp nauðsynlegar pakkar
+Þegar umhverfið er virkjað, settu upp nauðsynlegar pakkar (numpy og matplotlib):
+bash
+
+pip install numpy matplotlib
+
+3. Keyra forritið
+Vistaðu forritið í skrá, til dæmis relation_matrix.py.
+Keyrðu síðan forritið:
+bash
+python relation_matrix.py
+Forritið mun biðja þig um að slá inn dagsetningu (dag, mánuð og ár) og byggt á þeirri dagsetningu mun það búa til venslamatris, greina eiginleika þess og sýna venslin myndrænt.
+Dæmi um notkun
+Þegar þú ert beðinn, sláðu inn dagsetningu, mánuð og ár fæðingar, og forritið mun skila:
+	•	Fylki fyrir uppgefna dagsetningu.
+	•	Greiningu á eiginleikum fylkisins:
+	◦	Sjálfhverft
+	◦	Samhverft
+	◦	Andsamhverft
+	◦	Gegnvirkt
+	•	Myndræna framsetningu á venslinu.
+
+Dæmi um úttak
+bash
+Sláðu inn dagsetningu fæðingardags (1-31): 15
+Sláðu inn mánuð fæðingardags (1-12): 8
+Sláðu inn ár fæðingardags (t.d., 1990): 1990
+
+Fylkið fyrir dagsetninguna 15-08-1990 og seed 15081990:
+[[1 0 1 0]
+ [1 1 0 0]
+ [1 0 1 0]
+ [0 0 0 1]]
+
+Sjálfhverft (Reflexive): True
+Samhverft (Symmetric): False
+Andsamhverft (Antisymmetric): False
+Gegnvirkt (Transitive): True
+Myndræna framsetningin mun birtast í glugga með matplotlib.
+
+
