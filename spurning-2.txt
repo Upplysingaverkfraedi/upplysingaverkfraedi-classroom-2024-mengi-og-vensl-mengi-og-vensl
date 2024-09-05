@@ -1,0 +1,35 @@
+Spurning 2:
+Látum P(A) vera veldismengið af menginu A. 
+Sýnið hvort að P(A) ⊆ P(P(A)) sé alltaf það sama og tómamengið.
+ Rökstyðjið af hverju eða af hverju ekki. (20 stig)
+
+Skýrið ítarlega með röksemdum hvort mengið P(A) sé eða sé ekki hlutmengi 
+af P(P(A)) . Notið dæmi til að styðja röksemdir ykkar.
+
+SVAR: 
+
+Skoðum hvort P(A) ⊆ P(P(A)):
+- P(A) er safn allra hlutmengja A. 
+- Ef A = {1,2}, þá er P(A) = {0,{1},{2},{1,2}}
+- Ef P(P(A)) er veldismengið af P(A), þ.e safn allra hlutmengja af P(A).
+- Fyrir A= {1,2} þá er P(P(A)) = {0,{0},{{1}}, {{2}}, {{1,2}}, {0,{1}},...}
+
+Er P(A) ⊆ P(P(A))?
+- Til að P(A) sé hlutmengi af P(P(A)) þyrftu öll stök í P(A) að vera 
+hlutmengi í P(P(A)). Hinsvegar eru stök í P(A) hlutmengi af A, ekki hlutmengi
+af P(A). Þess vegna er eru stök í P(A) ekki sjálfkrafa í P(P(A)).
+- Ef A = {1}, þá er P(A) = {0, {1}}.
+- P(P(A)) er þá safn allra hlutmengja af P(A) = {0, {0}, {{1}}, P(A)}.
+- Hinsvegar þegar við skoðum P(P(A)), þá sjáum við að P(P(A)) inniheldur {{1}}
+ (Þar sem það er hlutmengi af P(A)), en ekki stakið {1}. Þetta þýðir að {1}
+ er ekki hlutmengi í P(P(A))
+  P(A) er ekki hlutmengi af P(P(A)). Hvert hlutmengi af A er stak 
+ í P(A), en í P(P(A)) eru þessi hlutmengi sjálf orðin að stökum í mengi. 
+
+Skoðum einnnig tómt mengi: Ef A er tómt mengi, þá er P(A) = {0}. 
+P(P(A) = {0, {0}}. Hér er P(A) augljóslega hlutmengi af P(P(A), þannig að P(A) ⊆ P(P(A)) er satt. 
+
+Niðurstaða: 
+P(A) ⊆ P(P(A)) er ekki alltaf satt. Það er aðeins uppfyllt þegar A er tómt mengi. 
+
+
