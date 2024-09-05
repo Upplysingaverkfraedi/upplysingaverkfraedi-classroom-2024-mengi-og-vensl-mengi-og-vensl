@@ -3,11 +3,11 @@ TBL: Mengi og vensl
 1. Mengjafæði
 Látum A og B vera hlutmengi alsherjarmengisins U . 
 Notið skilgreiningar á mengjahugtökum og þekktar umritunarreglur til að sýna að:
-## a. Sýnið að sniðmengi A ∩ B má skrifa sem:
+a. Sýnið að sniðmengi A ∩ B má skrifa sem:
 
 A ∩ B = A ∖ ( A ∖ B )
 
-## b. Sýnið að sammengi (A \cup B) má skrifa með hjálp mismunamengja:
+b. Sýnið að sammengi (A \cup B) má skrifa með hjálp mismunamengja:
 
 A ∪ B = ( A ∖ B ) ∪ B
 
@@ -37,7 +37,7 @@ En í seinna skrefinu bætum við aftur við öllum stökunum sem eru í B.
 Og þá erum við komin með öll þau stök sem eru í A eða B
 
 2. Veldismengi
-## Sýnið hvort að P(A) ⊆ P(P(A)) sé alltaf það sama og tómamengið. Rökstyðjið af hverju eða af hverju ekki. (20 stig)
+ Sýnið hvort að P(A) ⊆ P(P(A)) sé alltaf það sama og tómamengið. Rökstyðjið af hverju eða af hverju ekki. (20 stig)
 
 Skýrið ítarlega með röksemdum hvort mengið P(A) sé eða sé ekki hlutmengi 
 af P(P(A)) . Notið dæmi til að styðja röksemdir ykkar.
@@ -70,26 +70,33 @@ P(A) ⊆ P(P(A)) er ekki alltaf satt. Það er aðeins uppfyllt þegar A er tóm
 
 3. Vensl (25 stig) Sýnið og skýrið eftirfarandi:
 
-## a. Dæmi um vensl á mengi sem eru bæði samhverf og andsamhverf. (10 stig) (Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi.)
+a. Dæmi um vensl á mengi sem eru bæði samhverf og andsamhverf. (10 stig) 
+(Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi.)
 
 SVAR: 
 
-Vensl á mengi A eru ákveðin tengsl sem við setjum á milli staka í A. Til að skilja hvernig vensl geta verið samhverf og andsamhverf, er gott að setja upp skilgreiningar:
+Vensl á mengi A eru ákveðin tengsl sem við setjum á milli staka í A. 
+Til að skilja hvernig vensl geta verið samhverf og andsamhverf, er gott að setja upp skilgreiningar:
 
-Samhverf vensl: Vensl 𝑅 á mengi A eru samhverf ef fyrir öll a,b ∈ A, ef (a,b) ∈ 𝑅 þá er (b,a) ∈ 𝑅 líka. Með öðrum orðum, ef a er tengt við b, þá er b líka tengt við a.
+Samhverf vensl: Vensl 𝑅 á mengi A eru samhverf ef fyrir öll a,b ∈ A, ef (a,b) ∈ 𝑅 þá er (b,a) ∈ 𝑅 líka. 
+Með öðrum orðum, ef a er tengt við b, þá er b líka tengt við a.
 
-Andsamhverf vensl: Vensl 𝑅 á mengi A eru andsamhverf ef fyrir öll a,b ∈ A ef (a,b) ∈ 𝑅 þá er (b,a) ∉ 𝑅, nema þegar a = b. Þetta þýðir að ef a er tengt við b og a ≠ b, þá er b ekki tengt við a.
+Andsamhverf vensl: Vensl 𝑅 á mengi A eru andsamhverf ef fyrir öll a,b ∈ A ef (a,b) ∈ 𝑅 þá er (b,a) ∉ 𝑅, 
+nema þegar a = b. Þetta þýðir að ef a er tengt við b og a ≠ b, þá er b ekki tengt við a.
 
 Dæmi um vensl sem eru bæði samhverf og andsamhverf:
- Til að finna vensl sem eru bæði samhverf og andsamhverf, getum við í raun einungis talað um vensl sem hafa eiginleika þess að vera tóm að öðru leyti en sjálfstengslum. Það eru vensl þar sem aðeins sjálfstengsl eru til staðar. Við notum venjulega mengið A og setjum R ={(a,a)∣ a ∈ A}. Þetta er t.d. með sjálfstengslum eða í formi sjálftengingar, eins og: R ={(a, a) ∣ a ∈ A}
+ Til að finna vensl sem eru bæði samhverf og andsamhverf, getum við í raun einungis talað um vensl sem hafa 
+eiginleika þess að vera tóm að öðru leyti en að vera tengd sjálfum sér. Það eru vensl þar sem aðeins sjálfstengsl eru til staðar. 
+Við notum venjulega mengið A og setjum R ={(a,a)∣ a ∈ A}. Þetta er t.d. með sjálfstengslum, eins og: R ={(a, a) ∣ a ∈ A}
 
 Þetta vensl er bæði samhverft og andsamhverft af eftirfarandi ástæðum:
 
-1) Samhverft: Fyrir öll a,b ∈ A ef ( a,b ) ∈ 𝑅, þá þarf a að vera jafnt og b (þar sem aðeins sjálfstengsl eru til staðar). Þannig, ( a,b ) ∈ 𝑅 þýðir að a = b, og þar með er (b,a) ∈ 𝑅 þar sem a = b.
+1) Samhverft: Fyrir öll a,b ∈ A ef ( a,b ) ∈ 𝑅, þá þarf a að vera jafnt og b 
+(þar sem aðeins sjálfstengsl eru til staðar). Þannig, ( a,b ) ∈ 𝑅 þýðir að a = b, og þar með er (b,a) ∈ 𝑅 þar sem a = b.
 
 2) Andsamhverft: Ef (a , b) ∈ 𝑅, þá þýðir það að a = b. Enginn (a , b) með a ≠ b er í 𝑅, svo engin (b , a) með a ≠ b er til staðar heldur. Þannig er (b,a) ∉ 𝑅 nema a = b.
 
-## b. Munur á milli falla og vensla. (5 stig) (Skýrið einnig muninn á falli og vensli og gefið gott sýnidæmi um muninn.)
+b. Munur á milli falla og vensla. (5 stig) (Skýrið einnig muninn á falli og vensli og gefið gott sýnidæmi um muninn.)
 
 SVAR: 
 
