@@ -1,0 +1,151 @@
+TBL: Mengi og vensl
+
+1. Mengjafæði
+Látum A og B vera hlutmengi alsherjarmengisins U . 
+Notið skilgreiningar á mengjahugtökum og þekktar umritunarreglur til að sýna að:
+a. Sýnið að sniðmengi A ∩ B má skrifa sem:
+
+A ∩ B = A ∖ ( A ∖ B )
+
+b. Sýnið að sammengi (A \cup B) má skrifa með hjálp mismunamengja:
+
+A ∪ B = ( A ∖ B ) ∪ B
+
+Sýnið útreikningana og notið skilgreiningar á sammengi ( ∪ ) , 
+sniðmengi ( ∩ ) , og mismengi ( ∖ ) , og stærðfræðilega rökfærslu.
+
+Svar: 
+Byrja á að skilgreina: 
+Sammengi ( ∪ ) tveggja mengja A og B er mengi þeirra staka sem eru a.m.k. í öðru þeirra, táknað A∪B.
+Sniðmengi ( ∩ ) tveggja mengja A og B er mengi þeirra staka sem eru í báðum mengjunum, táknað A∩B.
+Mismengi ( \ ) tveggja mengja A og B er mengi þeirra staka sem eru í A en ekki í B, táknað A\B.
+
+a)
+A ∩ B: Þetta er A sam B og er það mengi sem hefur bara þau stök sem eru bæði í A og B 
+
+A ∖ ( A ∖ B ): Byrjum að leysa innri svigann: Búum til nýtt mengi C: C=(A\B). 
+C er þá sem er mengi þeirra staka sem eru í A en ekki í B. 
+Svo leysum við A\C: Það eru mengi þeirra staka sem eru í A en ekki í C. 
+Þá er búið að útiloka þau stök sem eru bara í A en ekki í B og þau stök sem eru bara í B en ekki í A. 
+Þ.a.l. erum við bara með þau stök sem eru bæði í A og B. 
+
+b) A ∪ B: Samengi A og B eru öll þau stök sem eru í A eða B. 
+Byrjum að leysa ( A ∖ B ): þetta er mengi þeirra staka sem eru í A en ekki í B.
+Leysum svo seinni hlutann ( A ∖ B ) ∪ B: Þetta er sam B sem eru öll stökin í B. 
+Í fyrra skrefinu erum við að útilöka þau stök sem eru bæði í A og B. 
+En í seinna skrefinu bætum við aftur við öllum stökunum sem eru í B. 
+Og þá erum við komin með öll þau stök sem eru í A eða B
+
+2. Veldismengi
+ Sýnið hvort að P(A) ⊆ P(P(A)) sé alltaf það sama og tómamengið. Rökstyðjið af hverju eða af hverju ekki. (20 stig)
+
+Skýrið ítarlega með röksemdum hvort mengið P(A) sé eða sé ekki hlutmengi 
+af P(P(A)) . Notið dæmi til að styðja röksemdir ykkar.
+
+SVAR: 
+
+Skoðum hvort P(A) ⊆ P(P(A)):
+- P(A) er safn allra hlutmengja A. 
+- Ef A = {1,2}, þá er P(A) = {0,{1},{2},{1,2}}
+- Ef P(P(A)) er veldismengið af P(A), þ.e safn allra hlutmengja af P(A).
+- Fyrir A= {1,2} þá er P(P(A)) = {0,{0},{{1}}, {{2}}, {{1,2}}, {0,{1}},...}
+
+Er P(A) ⊆ P(P(A))?
+- Til að P(A) sé hlutmengi af P(P(A)) þyrftu öll stök í P(A) að vera 
+hlutmengi í P(P(A)). Hinsvegar eru stök í P(A) hlutmengi af A, ekki hlutmengi
+af P(A). Þess vegna er eru stök í P(A) ekki sjálfkrafa í P(P(A)).
+- Ef A = {1}, þá er P(A) = {0, {1}}.
+- P(P(A)) er þá safn allra hlutmengja af P(A) = {0, {0}, {{1}}, P(A)}.
+- Hinsvegar þegar við skoðum P(P(A)), þá sjáum við að P(P(A)) inniheldur {{1}}
+ (Þar sem það er hlutmengi af P(A)), en ekki stakið {1}. Þetta þýðir að {1}
+ er ekki hlutmengi í P(P(A))
+  P(A) er ekki hlutmengi af P(P(A)). Hvert hlutmengi af A er stak 
+ í P(A), en í P(P(A)) eru þessi hlutmengi sjálf orðin að stökum í mengi. 
+
+Skoðum einnnig tómt mengi: Ef A er tómt mengi, þá er P(A) = {0}. 
+P(P(A) = {0, {0}}. Hér er P(A) augljóslega hlutmengi af P(P(A), þannig að P(A) ⊆ P(P(A)) er satt. 
+
+Niðurstaða: 
+P(A) ⊆ P(P(A)) er ekki alltaf satt. Það er aðeins uppfyllt þegar A er tómt mengi. 
+
+3. Vensl (25 stig) Sýnið og skýrið eftirfarandi:
+
+a. Dæmi um vensl á mengi sem eru bæði samhverf og andsamhverf. (10 stig) 
+(Skýrið ítarlega hvað gerir vensl samhverf og andsamhverf og nefnið dæmi.)
+
+SVAR: 
+
+Vensl á mengi A eru ákveðin tengsl sem við setjum á milli staka í A. 
+Til að skilja hvernig vensl geta verið samhverf og andsamhverf, er gott að setja upp skilgreiningar:
+
+Samhverf vensl: Vensl 𝑅 á mengi A eru samhverf ef fyrir öll a,b ∈ A, ef (a,b) ∈ 𝑅 þá er (b,a) ∈ 𝑅 líka. 
+Með öðrum orðum, ef a er tengt við b, þá er b líka tengt við a.
+
+Andsamhverf vensl: Vensl 𝑅 á mengi A eru andsamhverf ef fyrir öll a,b ∈ A ef (a,b) ∈ 𝑅 þá er (b,a) ∉ 𝑅, 
+nema þegar a = b. Þetta þýðir að ef a er tengt við b og a ≠ b, þá er b ekki tengt við a.
+
+Dæmi um vensl sem eru bæði samhverf og andsamhverf:
+ Til að finna vensl sem eru bæði samhverf og andsamhverf, getum við í raun einungis talað um vensl sem hafa 
+eiginleika þess að vera tóm að öðru leyti en að vera tengd sjálfum sér. Það eru vensl þar sem aðeins sjálfstengsl eru til staðar. 
+Við notum venjulega mengið A og setjum R ={(a,a)∣ a ∈ A}. Þetta er t.d. með sjálfstengslum, eins og: R ={(a, a) ∣ a ∈ A}
+
+Þetta vensl er bæði samhverft og andsamhverft af eftirfarandi ástæðum:
+
+1) Samhverft: Fyrir öll a,b ∈ A ef ( a,b ) ∈ 𝑅, þá þarf a að vera jafnt og b 
+(þar sem aðeins sjálfstengsl eru til staðar). Þannig, ( a,b ) ∈ 𝑅 þýðir að a = b, og þar með er (b,a) ∈ 𝑅 þar sem a = b.
+
+2) Andsamhverft: Ef (a , b) ∈ 𝑅, þá þýðir það að a = b. Enginn (a , b) með a ≠ b er í 𝑅, svo engin (b , a) með a ≠ b er til staðar heldur. Þannig er (b,a) ∉ 𝑅 nema a = b.
+
+b. Munur á milli falla og vensla. (5 stig) (Skýrið einnig muninn á falli og vensli og gefið gott sýnidæmi um muninn.)
+
+SVAR: 
+
+Fall og vensl eru bæði hugtök sem tengjast milli staka í mengi, en þau hafa ólíka eiginleika og skilgreiningar:
+
+Fall: Fall 𝑓 frá mengi A til mengi 𝐵 eru tengsl sem úthluta einu og aðeins einu staki í 𝐵 við hverju staki í A. Það þýðir að fyrir hvert a (í A) er til nákvæmlega eitt b (í B) þannig að f(a) = b. Þetta er formlega skrifað sem f: A -> B.
+
+Dæmi um fall: Látum A = {1,2,3} og B ={a,b}. Fall f : A -> B gæti verið skilgreint sem: f(1) = 1, f(2) = b, f(3) = a Þetta þýðir að fyrir hvert stak í A, er til eitt og aðeins eitt stak í B sem er tengt við.
+Vensl: Vensl 𝑅 á mengi A getur verið hvaða tengsl sem er á milli staka í A, þar sem ekki er krafist þess að hvert stak tengist einu og aðeins einu öðru staki. Þetta þýðir að 𝑅 getur haft mörg eða engin tengsl milli staka og er ekki bundið við sérstaka úthlutun.
+
+Dæmi um vensl: Látum A = {1,2,3}. Vensl R gæti verið: R = {(1,2), (2,3), (3,1), (1,1)} Hér eru tengsl milli staka í A, en það er engin krafa um að hvert stak sé tengt við aðeins eitt annað stak, eða öll stök séu tengd.
+Munur:
+
+Fall krefst þess að hvert stak í upphaflegu mengi (dómenginu) sé tengt við nákvæmlega eitt stak í úthlutunarmenginu.
+Vensl eru almennt ekki bundin við þessa úthlutun og geta haft fleiri tengsl, þar sem það er ekki bundið að hverju staki í mengi.
+Vensl eru oft notuð til að lýsa tengslum sem falla ekki undir ákveðið lögmál eins og í tilfelli falla.
+
+4. Vensl á heiltölum 
+Hérna eru niðurstöðurnar úr Vensl.py
+Fylkið fyrir dagsetninguna 09-092003 og seed 9092003:
+[[0 0 1 1]
+ [0 0 1 0]
+ [1 0 0 0]
+ [1 1 0 0]]
+
+Fylkið er ekki sjálfhverft
+Fylkið er ekki samhverft
+Fylkið er ekki andsamhverft
+Fylkið er ekki gegnvirkt
+
+Fylkið fyrir dagsetninguna 27-112002 og seed 27112002:
+[[0 0 1 0]
+ [1 1 1 0]
+ [0 1 0 1]
+ [1 0 1 0]]
+
+Fylkið er ekki sjálfhverft
+Fylkið er ekki samhverft
+Fylkið er ekki andsamhverft
+Fylkið er ekki gegnvirkt
+
+Fylkið fyrir dagsetninguna 30-012001 og seed 30012001:
+[[0 0 1 0]
+ [1 0 0 1]
+ [0 0 0 0]
+ [0 1 0 1]]
+
+Fylkið er ekki sjálfhverft
+Fylkið er ekki samhverft
+Fylkið er ekki andsamhverft
+Fylkið er ekki gegnvirkt
+
