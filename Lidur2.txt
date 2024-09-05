@@ -1,0 +1,15 @@
+2. Veldismengi (20 stig)
+Látum P(A) vera veldismengið af menginu A. Sýnið hvort að P(A)⊆P(P(A)) sé alltaf það sama og tómamengið. Rökstyðjið af hverju eða af hverju ekki. (20 stig)
+Skýrið ítarlega með röksemdum hvort mengið P(A) sé eða sé ekki hlutmengi af P(P(A)). Notið dæmi til að styðja röksemdir ykkar. 
+
+Lausn: 
+
+Skoðum dæmið A = {1, 2}. Veldismengi A væri þá P(A) = {{0}, {1}, {2}, {1, 2}}. Veldismengi P(A), P(P(A)) inniheldur þá {{∅}, {{∅}}, {{1}}, {{2}}, {{1, 2}}, {{∅}, {1}}, {{∅}, {2}}, {{∅}, {1, 2}}, {{1}, {2}}, {{1}, {1, 2}}, {{2}, {1, 2}}, og {{∅}, {1}, {2}, {1, 2}}}. Veldismengi P(A) er þá safn allra hlutmengja í A. 
+
+Til þess að athuga hvort P(A)⊆P(P(A)) skulum við skoða eftirfarandi dæmi til þess að athuga hvort öll stök í P(A) séu hlutmengi í P(P(A)). 
+
+Skoðum dæmið A = {∅, {1}}. Veldismengi A væri þá P(A) = {∅, {1}}. Veldismengi P(A) væri þá P(P(A)) = {∅, {∅}, {{1}}, {∅,{1}}}. Hér er [1] ekki stak í P(P(A)) þó það sé hlutmengi A sem þýðir að P(A)⊆P(P(A)) er ekki satt. 
+
+Skoðum tómamengið A = {∅}. Veldismengi A væri þá P(A) = {∅} og veldismengi P(A) væri P(P(A)) = {∅, {∅}}. Þarna er P(A)⊆P(P(A)) satt þar sem P(A) er hlutmengi af P(P(A)). 
+
+Við sjáum að mengið P(A) er ekki alltaf hlutmengi af P(P(A)) þar sem P(A) getur innihaldið stök sem eru ekki í P(P(A)). P(A)⊆P(P(A)) er því ekki alltaf satt heldur einungis satt ef A er tómt mengi. 
