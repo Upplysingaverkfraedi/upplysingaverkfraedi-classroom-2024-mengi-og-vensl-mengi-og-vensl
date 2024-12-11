@@ -1,4 +1,16 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/eaw_5ILO)
 # Mengi og vensl
+Lausnin á verkefninu sem er lýst hér fyrir neðan má finna í `lausn.md`. 
+
+Til að keyra Python kóðann `Vensl.py` sem er hluti af lið 4 þarf að installa nokkrum pökkum með `pip` á eftirfarandi máta:
+``` bash 
+pip install -r requirements.txt
+```
+og til að keyra kóðann þarf
+```bash
+python Vensl.py
+```
+ef þið viljið breyta dagssetningum fyrir að búa til fylki þarf að aðlaga gildið fyrir `birthdays` sem er ofarlega í `Vensl.py`.
 
 ## Leiðbeiningar
 
